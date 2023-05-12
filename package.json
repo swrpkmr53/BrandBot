@@ -1,0 +1,40 @@
+{
+  "name": "filevision",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^0.0.14",
+    "@radix-ui/react-dialog": "^1.0.3",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-progress": "^1.0.2",
+    "@radix-ui/react-select": "^1.2.1",
+    "@radix-ui/react-tabs": "^1.0.3",
+    "@types/node": "20.1.1",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "10.4.14",
+    "d3-dsv": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "export-to-csv": "^0.2.1",
+    "firebase": "^9.21.0",
+    "firebase-admin": "^11.8.0",
+    "langchain": "^0.0.73",
+    "mammoth": "^1.5.1",
+    "next": "13.4.1",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-toastify": "^9.1.2",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
+  }
+}
