@@ -50,17 +50,17 @@ const Chat: NextPage<Props> = () => {
             //incorrect input 
           return;
         }
-       
+        const data = await res.text();
         const usrMsg: IMessage = {
           message: input,
           isUserMessage: true,
         };
         const msg: IMessage = {
           message: data,
-          
+          isUserMessage: false,
         };
 
-      
+        setMessages((msgs) => [...msgs, usrMsg, msg]);
         setInput("");
       } catch (e) {
         console.log(e);
