@@ -35,7 +35,7 @@ const Chat: NextPage<Props> = () => {
     if (input.length > 3 && e.key === "Enter" && !loading) {
       try {
         setLoading(true);
-
+// call api chat 
         const res = await fetch("/api/newchat/", {
           method: "POST",
           body: JSON.stringify({
@@ -46,20 +46,21 @@ const Chat: NextPage<Props> = () => {
           }),
         });
         if (!res.ok) {
-          toast.error(`Something Went Wrong!..${res.statusText}`);
+            toast.error(`Something Went Wrong!..${res.statusText}`);
+            //incorrect input 
           return;
         }
-        const data = await res.text();
+       
         const usrMsg: IMessage = {
           message: input,
           isUserMessage: true,
         };
         const msg: IMessage = {
           message: data,
-          isUserMessage: false,
+          
         };
 
-        setMessages((msgs) => [...msgs, usrMsg, msg]);
+      
         setInput("");
       } catch (e) {
         console.log(e);
