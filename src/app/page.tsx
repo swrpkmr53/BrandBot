@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex bg-gray-100 min-h-screen flex-col items-center p-6 md:p-24 lg:p-24 overscroll-contain ">
       <div className="text-center">
-        <h1 className="text-lg font-bold">Brand Bot1</h1>
+        <h1 className="text-lg font-bold">BRAND BOT</h1>
 
         <div className="flex justify-center space-x-4">
           <UploadFile />
